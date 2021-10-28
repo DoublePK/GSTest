@@ -6,7 +6,7 @@ function testGS(){
   .then(d => d.json())
   .then(d => {
     //document.getElementById('app').textContent = d[0].status;
-    document.getElementById('app').textContent = d;
+    document.getElementById('app').textContent = d[0].data;
   })
   })
 }
