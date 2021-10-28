@@ -1,6 +1,6 @@
 function testGS(){
 
-  const url = "https://script.google.com/macros/s/AKfycbwn9NW1BxllCNOYnU1r4wQJ4nO0q-lV4qAIv7wERJyjBV-H6ZjSZc_u7xy4T_UHtoNQ/exec";
+  const url = "https://script.google.com/macros/s/AKfycbx9SGzwpSokDto3-GbZp8C5I9B3YjiOqpdx23HY4T2VLQyxuMH-ySCXou-Ahb5cC3zO/exec";
 
   fetch(url)
   .then(d => d.json())
@@ -15,7 +15,7 @@ document.getElementById('btn').addEventListener('click', testGS);
 
 function addGS(){
 
-  const url = "https://script.google.com/macros/s/AKfycbwn9NW1BxllCNOYnU1r4wQJ4nO0q-lV4qAIv7wERJyjBV-H6ZjSZc_u7xy4T_UHtoNQ/exec";
+  const url = "https://script.google.com/macros/s/AKfycbx9SGzwpSokDto3-GbZp8C5I9B3YjiOqpdx23HY4T2VLQyxuMH-ySCXou-Ahb5cC3zO/exec";
 
   fetch(url, {
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -25,7 +25,7 @@ function addGS(){
       'Content-Type': 'application/json'
     },
     redirect: 'follow', 
-    body: JSON.stringify({name:'MG MG'}) // body data type must match "Content-Type" header
+    body: JSON.stringify({First:"San Lin ",'Last Name':"Myat","Phone No":123343490}) // body data type must match "Content-Type" header
   })
 }
 
